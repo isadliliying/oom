@@ -1,0 +1,12 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aiseot.oom.userservice.dao.UserDao">
+    <select id="selectOneByNanmeAndPwd" resultType="com.aiseot.oom.userservice.entity.User">
+        SELECT userid, username, password
+        FROM tb_user
+        WHERE username=#{username} AND password=#{password}
+    </select>
+    <insert id="insertOne" useGeneratedKeys="true">
+        INSERT INTO tb_user (username,password)
+        VALUES (#{username},#{password})
+    </insert>
+</mapper>
