@@ -1,6 +1,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.aiseot.UserDao">
-    <select id="selectOneByNanmeAndPwd" resultType="com.aiseot.User">
+<mapper namespace="com.aiseot.oom.markservice.dao.MarkDao">
+    <select id="selectOneByNanmeAndPwd" resultType="com.aiseot.oom.markservice.entity.Mark">
         SELECT userid, username, password
         FROM tb_user
         WHERE username=#{username} AND password=#{password}

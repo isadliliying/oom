@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 1010
 #配置数据源
 spring:
   datasource:
@@ -9,4 +9,4 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 #配置mybatis映射文件
 mybatis:
-  mapper-locations: classpath:com/aiseot/oom/userservice/mapper/*.xml
+  mapper-locations: classpath:com/aiseot/oom/markservice/mapper/*.xml
