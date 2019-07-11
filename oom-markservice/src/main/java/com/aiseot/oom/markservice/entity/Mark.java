@@ -1,31 +1,45 @@
 package com.aiseot.oom.markservice.entity;
 
+import java.util.Date;
+
 public class Mark {
-    private int userid;
-    private String username;
-    private String password;
+    private Integer mid;
 
-    public int getUserid() {
-        return userid;
+    private Integer uid;
+
+    private String url;
+
+    private Date createtime;
+
+    public Integer getMid() {
+        return mid;
     }
 
-    public void setUserid(int userid) {
-        this.userid = userid;
+    public void setMid(Integer mid) {
+        this.mid = mid;
     }
 
-    public String getUsername() {
-        return username;
+    public Integer getUid() {
+        return uid;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUid(Integer uid) {
+        this.uid = uid;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUrl() {
+        return url;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUrl(String url) {
+        this.url = url == null ? null : url.trim();
+    }
+
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
     }
 }
